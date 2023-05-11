@@ -1,0 +1,308 @@
+:root {
+    --primarycolor: #3B698D;
+    --secondcolor:#F05A68;
+    --lightcolor:#ffff ;
+    --bgcolor-1: #35314B;
+    --bgcolor-2:#F8BE54;
+    --padding: 8%;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Rakkas', "cursive";
+    font-size: 16px;
+    color: var(--lightcolor);
+}
+
+h2{
+    font-size: 4.65rem ;
+    margin: 1.7rem 0;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+h4{
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+}
+span{
+    color: var(--secondcolor);
+}
+h1{
+    font-size: 1.5rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor-1);
+    justify-content: space-between;
+
+}
+nav{
+    padding-top: 2.2rem;
+    padding-right: var(--padding);
+    padding-left: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+nav ul li a{
+    color: var(--lightcolor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: var(--bgcolor-2);
+}
+.btn{
+    background-color: var(--primarycolor);
+    color: var(--lightcolor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+
+}
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primarycolor);
+}
+.home .content .text{
+    margin-right: 50px;
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mind{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primarycolor);
+    padding: 2rem;
+}
+.mind .slider-mind{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+.mind .slider-mind .slider{
+    display: flex;
+    aspect-ratio: 13.2 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75 hsla(0, 0%, 0%, 0.25);
+    border-radius: 1.75rem;
+}
+.mind .slider-mind .slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.mind .slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.mind .slider-nav a{
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: var(--bgcolor-2);
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.mind .slider-nav a:hover{
+     opacity: 1;
+}
+.mind .slider-mind .it-text p{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 52.5px;
+    font-size: 1.3rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor-1);
+    padding: 30px;
+   padding-top: 90px;
+}
+.btn-sents{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 40px;
+    font-family: 'Rakkas', "cursive" ;
+    color: var(--bgcolor-2);
+    border-bottom:1px solid var(--bgcolor-2);
+    width: 30%;
+    text-align: right;
+    box-shadow: 0 10px 0px rgba(34, 32, 32, 0.363);
+    margin-bottom: 15px;
+}
+#mydiv,#text-1,#text-2,#text-3,#text-4{
+    display: none;
+}
+
+.text{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Rakkas', "cursive" ;
+    margin-bottom: 15px;
+ 
+}
+
+.text-btn{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size:21px;
+    color: var(--lightcolor);
+    font-family: 'Rakkas', "cursive" ;
+    margin-bottom: 5px;
+  
+    
+}
+.text-1 p{
+    margin: 5px;
+}
+.text-2 p{
+    margin: 5px;
+}
+.text-3 p{
+    margin: 5px;
+}
+.text-4 p{
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    padding: 2rem var(--padding) ;
+    background-color: var(--bgcolor-2);
+    
+}
+ 
+footer .about-our{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .about-our p{
+    color: var(--bgcolor-1);
+    text-align: center;
+    width: 500px;
+    font-size: 1.4rem;
+}
+footer .about-our .end{
+    color: var(--primarycolor);
+    margin: 0.75rem;
+    font-size: 1.25rem;
+}
+
+
+
+
+
